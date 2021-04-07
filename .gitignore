@@ -1,0 +1,10 @@
+# Intellije Idea
+.idea
+MeleshkoWorkspace.iml
+
+#compiled files
+out
+
+# Custom dirs
+Draft
+Homework2
