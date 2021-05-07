@@ -1,0 +1,8 @@
+The private modifier specifies that the member can only be accessed in its own class.
+The protected modifier specifies that the member can only be accessed within its own package (as with package-private) and, in addition, by a subclass of its class in another package.
+
+https://i.stack.imgur.com/hzv3z.png
+-A private member (i) is only accessible within the same class as it is declared.
+-A member with no access modifier (j) is only accessible within classes in the same package.
+-A protected member (k) is accessible within all classes in the same package and within subclasses in other packages.
+-A public member (l) is accessible to all classes (unless it resides in a module that does not export the package it is declared in).
