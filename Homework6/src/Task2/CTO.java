@@ -1,9 +1,5 @@
 package Task2;
 
-public class CTO {
-    private int numberOfEmployees = 1;
+class CTO extends IT{
 
-    public String toString () {
-        return "The number of CTOs: " + numberOfEmployees;
-    }
 }

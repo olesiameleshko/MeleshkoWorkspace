@@ -1,10 +1,13 @@
 package Task2;
 
-public class Worker {
-    private IT itSpecialist = new IT();
-    private Clerk clerk = new Clerk();
+class Worker {
+    String name;
 
-    public String toString () {
-        return itSpecialist + "\n" + clerk;
+    public Worker(String name) {
+        this.name = name;
+    }
+    public Worker() {
+        this.name = "Worker";
+        System.out.println("Inside Worker constructor");
     }
 }

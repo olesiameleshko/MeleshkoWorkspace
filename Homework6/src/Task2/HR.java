@@ -1,9 +1,5 @@
 package Task2;
 
-public class HR {
-    private int numberOfEmployees = 3;
+class HR extends Clerk{
 
-    public String toString () {
-        return "The number of HRs: " + numberOfEmployees;
-    }
 }
