@@ -1,4 +1,4 @@
-package Task6;
+package com.Task6;
 
 //Task 6
 public class TheWeather {
@@ -8,7 +8,6 @@ public class TheWeather {
     }
 
     public static TheWeather createForecast() {
-
         return new TheWeather();
     }
     public void checkWeather() {
