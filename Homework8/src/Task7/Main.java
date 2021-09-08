@@ -9,9 +9,9 @@ public class Main {
         s.add(new Example("Donald", "Duck"));
         System.out.println(s.contains(new Example("Donald", "Duck")));
         System.out.println(s.contains(new Example("Duck", "Duck")));
-        Example example = new Example("Duck", "Donald");
+        Example example = new Example(null, null);
         System.out.println(example.equals(new Example("Duck", "Donald")));
-        System.out.println(example.equals(new Example("Donald", "Donald")));
+        System.out.println(example.equals(new Example(null, null)));
         System.out.println(s.hashCode());
     }
 }

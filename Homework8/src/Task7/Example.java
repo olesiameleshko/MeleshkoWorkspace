@@ -20,17 +20,18 @@ public class Example {
     }
 
     //1-st equals
+
     @Override
     public boolean equals(Object o) {
         if (o == null) return false;
         if (o == this) return true;
         if (!(o instanceof Example)) return false;
         Example c = (Example) o;
-        return this.first == c.getFirst() && this.last == c.getLast();
+        return Objects.equals(first, c.getFirst()) && Objects.equals(last, c.getLast());
     }
 
     //2-nd equals
-    /*
+/*
     @Override
     public boolean equals(Object obj) {
         if (this == obj)
@@ -40,13 +41,14 @@ public class Example {
         if (getClass() != obj.getClass())
             return false;
         Example ex = (Example) obj;
-        if (first != ex.first)
+        if (!Objects.equals(first, ex.getFirst()))
             return false;
-        if (last != ex.last)
+        if (!Objects.equals(last, ex.getLast()))
             return false;
-        return true;
-    }*/
 
+        return true;
+    }
+*/
     //1-st hashcode method
     /*
     @Override
